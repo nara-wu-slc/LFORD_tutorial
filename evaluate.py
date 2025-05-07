@@ -30,7 +30,7 @@ class Experiment:
         self.formatted_src_data: List[str] = []
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            args.model_name, device_map="auto"
+            args.model_name, device_map="cuda" if torch.cuda.is_available() else "cpu"
         )
         self.tokenizer = AutoTokenizer.from_pretrained(args.model_name)
 
