@@ -33,9 +33,9 @@ source /slc/share/dot.zshrc.slc
 ## 使用方法
 #### サンプル
 ```
-python evaluate.py
-    --src_file_path sample/sample.en
-    --tgt_file_path sample/sample.ja
+python evaluate.py \
+    --src_file_path sample/sample.en \
+    --tgt_file_path sample/sample.ja \
     --output_file_dir sample/result
 ```
 
