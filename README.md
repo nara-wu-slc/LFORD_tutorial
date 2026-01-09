@@ -29,6 +29,11 @@ pip3 install torch==2.6.0 typed-argument-parser==1.10.1 tqdm==4.67.1 transformer
 ```
 source /slc/share/dot.zshrc.slc
 ```
+#### 【必要に応じて】使うGPUを指定する
+2GPU機なら0か1、4GPU機なら 0-3 のどれか。カンマ区切りで複数指定可能
+```
+export CUDA_VISIBLE_DEVICES=0
+```
 
 ## 使用方法
 #### サンプル
